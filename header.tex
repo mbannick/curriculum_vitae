@@ -30,7 +30,12 @@
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 \usepackage{fontawesome}
-\usepackage[scale=0.8]{geometry} % Reduce document margins
+\usepackage{hyperref}
+\hypersetup{colorlinks,breaklinks,
+            urlcolor=[RGB]{130, 96, 165},
+            linkcolor=[RGB]{130, 96, 165}}
+
+\usepackage[scale=0.80]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -38,7 +43,7 @@
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 \usepackage{tikz}
-
+\usepackage{doi}
 \usepackage{mathptmx}
 \usepackage[11pt]{moresize}
 
@@ -47,6 +52,8 @@
   defernumbers=true,
   sorting=none,
   maxbibnames=20,maxcitenames=20,
+  style=nejm,
+  articledoi=true
 ]{biblatex}
 \addbibresource{refs.bib}
 

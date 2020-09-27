@@ -5,17 +5,30 @@
 
 \mobile{+1-206-498-0046}
 \email{mnorwood@uw.edu}
+\social[github]{mbannick}
+\homepage{www.marlenabannick.com}
 
 \begin{document}
 
 \makecvtitle
+\vspace{-0.3 in}
+\section{Research Interests}
+\begin{multicols}{2}
+\begin{itemize}
+	\item Statistical learning for population health applications
+	\item Health metrics
+	\item Clinical trials methods
+	\item Software engineering and statistical computing
+\end{itemize}
+\end{multicols}
+
 
 \section{Education}
 
-\cventry{2019--present}{Doctor of Philosophy in Biostatistics}{University of Washington}{}{}{}
+\cventry{2020--present}{Doctor of Philosophy in Biostatistics}{University of Washington}{}{}{}
 
 \cventry{2016--2019}{Master of Science in Biostatistics}{University of Washington}{}{}{
-Committee: Ruth Etzioni chair; Megan Othus \\ 
+Committee: Dr. Ruth Etzioni chair; Dr. Megan Othus \\ 
 Thesis: Estimating time to intermediate endpoints using population-level survival data and deconvolution methods, with application to cancer progression and recurrence
 }
 
@@ -26,15 +39,23 @@ Thesis: Estimating time to intermediate endpoints using population-level surviva
 
 \section{Experience}
 
-\cventry{2019--present}{Mathematical Sciences Researcher}{Institute for Health Metrics and Evaluation}{}{}{
+\cventry{10/2020--present}{Graduate Research Assistant}{Fred Hutchinson Cancer Research Center}{}{}{
+Supervisor: Dr. Fei Gao
+}
+
+\cventry{10/2020--present}{Graduate Trainee}{Institute for Health Metrics and Evaluation}{}{}{
+Supervisor: Dr. Aleksandr Aravkin
+}
+
+\cventry{2019--2020}{Mathematical Sciences Researcher}{Institute for Health Metrics and Evaluation}{}{}{
 Supervisor: Dr. Aleksandr Aravkin
 \vspace{1mm}
 \begin{itemize}
-    \item Develop new quantitative methods and modeling strategies that incorporate all possible relevant global health data to achieve credible and policy-relevant results
-    \item \href{https://github.com/ihmeuw-msca}{Implement new and existing quantitative methods into code} that address analytical challenges experienced across teams at IHME
+    \item Develop quantitative methods and modeling strategies that incorporate all possible relevant global health data to achieve credible and policy-relevant results
+    \item \href{https://github.com/ihmeuw-msca}{Implement methods into code} that address analytical challenges across teams at IHME
     \item Lead Python software developer for a \href{https://github.com/ihmeuw/cascade-at}{multi-stage hierarchical disease dynamics model}
     \item Translate quantitative methodology to IHME research teams through consultations
-    \item Designed and built \href{https://github.com/ihmeuw/covid-model-seiir-pipeline}{COVID-19 modeling software} for the \href{https://covid19.healthdata.org/projections}{IHME COVID-19 projections}
+    \item Built \href{https://github.com/ihmeuw/covid-model-seiir-pipeline}{COVID-19 modeling software} for the \href{https://covid19.healthdata.org/projections}{IHME COVID-19 projections}
 \end{itemize}
 }
 
@@ -57,8 +78,7 @@ Supervisors: Dr. Stephen Lim, Dr. Kyle Foreman, Dr. Theo Vos
 \underline{Disease Estimation for the \href{http://www.healthdata.org/gbd}{Global Burden of Disease Study}}
 \vspace{1mm}
 \begin{itemize}
-    \item Developed estimates of \href{http://ihmeuw.org/56tv}{non-fatal injury burden} for the Global Burden of Disease Study 2016
-    \item Conceptualized and implemented strategies to estimate \href{http://ihmeuw.org/56tu}{sexual violence indicators} for the Sustainable Development Goals
+    \item Developed estimates of \href{http://ihmeuw.org/56tv}{non-fatal injury burden} for the Global Burden of Disease Study 2016 and \href{http://ihmeuw.org/56tu}{sexual violence indicators} for the Sustainable Development Goals
 \end{itemize}
 }
 
@@ -114,22 +134,6 @@ Supervisor: Dr. Suzanne Kerns, Division of Public Behavioral Health and Justice 
 \cvitem{2016}{\href{https://www.washington.edu/husky100/year/2016/#name=marlena-norwood}{Husky 100 Award}, University of Washington}
 \cvitem{2016}{\href{https://sph.washington.edu/about/sph-awards-archive}{Outstanding Student Award}, School of Public Health, University of Washington}
 
-\section{Publications}
-\nocite{*}
-\printbibliography[type=article,heading=none, notkeyword={GBD}]
-
-\vspace{0.25cm}
-\subsection{Global Burden of Disease Collaboration}
-\cvitem{}{Performed analyses and developed statistical and computational machinery for the \href{https://www.thelancet.com/gbd}{Global Burden of Disease Study}, significantly contributing to the following publications.}
-\vspace{0.10cm}
-\nocite{*}
-\printbibliography[type=article, heading=none, keyword={GBD}]
-
-\section{Presentations}
-
-\nocite{*}
-\printbibliography[type=misc,heading=none]
-
 \section{Teaching}
 
 \subsection{Guest Lectures}
@@ -143,6 +147,34 @@ Supervisor: Dr. Suzanne Kerns, Division of Public Behavioral Health and Justice 
 \cvitem{09/2020}{"Introduction to Research at the Institute for Health Metrics and Evaluation: Training Bootcamp for First-Year Post-Bachelor Fellows". Designed curriculum and facilitated a week-long crash course on intro epidemiology, biostatistics, R, Git and high performance computing. Institute for Health Metrics and Evaluation, University of Washington, Seattle.}
 
 \cvitem{05/2019}{"Data to DALYs: Case Study on Diabetes", with Dr. Theo Vos and Dr. Liane Ong. 2-day short course. Global Burden of Disease Workshop, Eretria, Greece.}
+
+\section{Publications}
+\subsection{Methodological}
+\vspace{0.10cm}
+
+\printbibliography[type=article, heading=none, keyword={methods}]
+\vspace{0.25cm}
+
+\subsection{Collaborative}
+\vspace{0.10cm}
+\printbibliography[type=article, heading=none, keyword={collab}]
+\vspace{0.25cm}
+
+\subsection{Global Burden of Disease Collaboration}
+\cvitem{}{Included as an author on the following publications as part of the \href{https://www.thelancet.com/gbd}{Global Burden of Disease Study}. Developed statistical and computational machinery and performed analyses.}
+\vspace{0.10cm}
+\printbibliography[type=article, heading=none, keyword={GBD}]
+
+\subsection{Preprints}
+\vspace{0.10cm}
+\nocite{*}
+\printbibliography[type=article, heading=none, keyword={collab-preprint}]
+\vspace{0.25cm}
+
+\section{Presentations}
+
+\nocite{*}
+\printbibliography[type=misc,heading=none]
 
 \section{Service and Affiliations}
 

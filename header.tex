@@ -73,6 +73,32 @@
       \leftmargin\labelwidth%
       \advance\leftmargin\labelsep}%
       \sloppy\clubpenalty4000\widowpenalty4000}
-  {\endlist}
+    {\endlist}
   {\item}
 \makeatother
+
+% \makeatletter
+% % warning the file called \blxmset@bibfile@name will be
+% % overwritten without warning
+% \def\blxmset@bibfile@name{\jobname -msets.bib}
+% \newwrite\blxmset@bibfile
+% \immediate\openout\blxmset@bibfile=\blxmset@bibfile@name
+% \immediate\write\blxmset@bibfile{%
+%   @comment{auxiliary file for \string\defbibentrysetlabel}^^J%
+%   @comment{This file may safely be deleted.
+%     It will be recreated as required.}}
+
+% \AtEndDocument{%
+%   \closeout\blxmset@bibfile}
+
+% \newrobustcmd*{\defbibentrysetlabel}[3]{%
+%   \@bsphack
+%   \immediate\write\blxmset@bibfile{%
+%     @set{#1, entryset = {\unexpanded{#3}}, %
+%           shorthand = {\unexpanded{#2}},}%
+%   }%
+%   \nocite{#1}%
+%   \@esphack}
+
+% \addbibresource{\blxmset@bibfile@name}
+% \makeatother
